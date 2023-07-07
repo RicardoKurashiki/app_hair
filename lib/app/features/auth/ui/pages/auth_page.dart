@@ -14,6 +14,10 @@ class _AuthPageState extends State<AuthPage> {
     return Container(
       height: MediaQuery.sizeOf(context).height * 0.6,
       color: Colors.purple,
+      padding: const EdgeInsets.all(16),
+      child: Image.network(
+        "https://i.kym-cdn.com/entries/icons/mobile/000/023/980/db1.jpg",
+      ),
     );
   }
 
