@@ -8,11 +8,11 @@ class LoginCubit extends Cubit<LoginState> {
 
   void savePassword(String password) => emit(state.setPassword(password));
 
-  Future<void> login() async {
+  Future<bool> login() async {
     emit(state.setLoading(true));
-    await Future.delayed(const Duration(seconds: 1));
-    print("LOADED");
+    await Future.delayed(const Duration(seconds: 3));
     emit(state.setLoading(false));
+    return true;
   }
 
   void dispose() {
